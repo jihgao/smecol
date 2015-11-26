@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+
+'use strict';
+process.title = 'smecol';
+var findup = require('findup-sync');
+var basedir = process.cwd();
+
+// Start looking in the CWD.
+var smecolPath = findup('smecol.js',{nocase:true, cwd:basedir});
+if(!smecolPath){
+  process.exit(5);
+}
+
+require(smecolPath)();

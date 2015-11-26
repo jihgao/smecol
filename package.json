@@ -1,0 +1,29 @@
+{
+  "name": "smecol",
+  "version": "1.0.0",
+  "description": "show the color format of terminal",
+  "keywords": [
+    "duplicate",
+    "easy",
+    "delete",
+    "files"
+  ],
+  "bin": {
+    "smecol": "bin/smecol"
+  },
+  "main": "smecol.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {},
+  "author": "jihgao",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jihgao/smecol.git"
+  },
+  "dependencies": {
+    "findup-sync": "^0.3.0",
+    "nopt": "^3.0.6"
+  }
+}
