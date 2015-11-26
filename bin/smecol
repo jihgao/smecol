@@ -6,7 +6,10 @@ var findup = require('findup-sync');
 var basedir = process.cwd();
 
 // Start looking in the CWD.
-var smecolPath = findup('smecol.js',{nocase:true, cwd:basedir});
+var smecolPath = findup('smecol.js',{nocase:true, cwd: basedir});
+if(!smecolPath){
+  smecolPath = findup('smecol.js',{nocase:true, cwd:__dirname});
+}
 if(!smecolPath){
   process.exit(5);
 }
